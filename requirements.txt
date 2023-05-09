@@ -1,0 +1,6 @@
+Flask==1.1.2
+transform 
+nltk
+networkx
+numpy
+spacy

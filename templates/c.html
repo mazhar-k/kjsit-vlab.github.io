@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+	<title>Summarisation VLAB</title>
+
+	<!-- CSS  -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="./static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+	<link href="./static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+	<meta charset="utf-8">
+	<title>Feedback Form</title>
+</head>
+
+<body>
+	<style>
+		* {
+			background: rgba(0, 0, 0, 0);
+		}
+
+		.navbar {
+			background-color: #9b2928;
+		}
+
+		.collapse {
+			background-color: #9b2928;
+		}
+
+		.navbar-brand {
+			color: black;
+		}
+
+		.button {
+			background-color: #9b2928;
+		}
+
+		.container {
+			padding-left: 0;
+			margin-left: 0;
+		}
+
+		nav {
+			background-color: #9b2928;
+			display: flex;
+			align-items: center;
+			padding: 25px 20px;
+		}
+
+		.logo {
+			height: 50px;
+			margin-right: 20px;
+		}
+
+		nav ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+		}
+
+		nav li {
+			margin-right: 20px;
+		}
+
+		nav li:last-child {
+			margin-right: 0;
+		}
+
+		nav a {
+			color: white;
+			text-decoration: none;
+			font-weight: bold;
+			font-size: 18px;
+			padding: 10px 15px;
+			display: block;
+		}
+
+		nav a:hover {
+			background-color: white;
+			color: red;
+		}
+	</style>
+	<nav>
+		<img src="./static/somaiya1.png" alt="pic"
+			style="height:70px ; width: 280px; margin-right:50px;  display:flex; flex-direction:row; -ms-flex-align: start;">
+		<ul>
+			<li><a href="{{url_for('a') }}">About</a></li>
+			<li><a href="{{url_for('x')}}">Theory</a></li>
+			<li><a href="{{url_for('b')}}">Simulation</a></li>
+			<li><a href="{{url_for('c')}}">Feedback</a></li>
+
+		</ul>
+	</nav>
+	<h1>Feedback Form</h1>
+	<form action="/submit_feedback" method="post">
+		<label for="name" style="font-size: 25px;">Name:</label>
+		<input type="text" id="name" name="name" required>
+		<br>
+		<label for="email" style="font-size: 25px;">Email:</label>
+		<input type="email" id="email" name="email" required>
+		<br></br>
+		<label for="feedback" style="font-size: 25px;">Feedback:</label>
+		<textarea id="feedback" name="feedback" required></textarea>
+		<br></br>
+		<div class="row center">
+			<input type="submit" class="btn-large waves-effect waves-light pink light-accent-2" value="Submit">
+		</div>
+	</form>
+	
+</body>
+
+</html>

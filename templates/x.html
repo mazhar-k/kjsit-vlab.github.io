@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+<html lang="sv">
+
+<head>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+	<title>Summarisation VLAB</title>
+
+	<!-- CSS  -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="./static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+	<link href="./static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen">
+	<link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet" />
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+
+<body>
+	<style>
+		* {
+			background: rgba(0, 0, 0, 0);
+		}
+
+		.navbar {
+			background-color: #9b2928;
+		}
+
+		.collapse {
+			background-color: #9b2928;
+		}
+
+		.navbar-brand {
+			color: black;
+		}
+
+		.button {
+			background-color: #9b2928;
+		}
+
+		.container {
+			padding-left: 0;
+			margin-left: 0;
+		}
+
+		nav {
+			background-color: #9b2928;
+			display: flex;
+			align-items: center;
+			padding: 25px 20px;
+		}
+
+		.logo {
+			height: 50px;
+			margin-right: 20px;
+		}
+
+		nav ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+		}
+
+		nav li {
+			margin-right: 20px;
+		}
+
+		nav li:last-child {
+			margin-right: 0;
+		}
+
+		nav a {
+			color: white;
+			text-decoration: none;
+			font-weight: bold;
+			font-size: 18px;
+			padding: 10px 15px;
+			display: block;
+		}
+
+		nav a:hover {
+			background-color: white;
+			color: red;
+		}
+	</style>
+	<nav>
+		<img src="./static/somaiya1.png" alt="pic"
+			style="height:70px ; width: 280px; margin-right:50px;  display:flex; flex-direction:row; -ms-flex-align: start;">
+		<ul>
+			<li><a href="{{url_for('a') }}">About</a></li>
+			<li><a href="{{url_for('x')}}">Theory</a></li>
+			<li><a href="{{url_for('b')}}">Simulation</a></li>
+			<li><a href="{{url_for('c')}}">Feedback</a></li>
+
+		</ul>
+	</nav>
+	<div class="bg-gray-100 p-4 rounded-lg">
+		<h1 class="text-3xl font-bold mb-4">Definition</h1>
+		<p class="text-lg leading-7">
+			Text summarization is the process of creating a condensed version of a text, while retaining its most
+			important
+			information, for applications such as news articles, academic papers, legal documents, and business reports.
+			This allows
+			readers to quickly find the information they need and provides a brief overview of a topic. Two main
+			approaches to text
+			summarization are extractive and abstractive, with extractive summarization selecting the most important
+			sentences or
+			phrases and concatenating them together, while abstractive summarization involves generating new sentences
+			that capture
+			the essence of the original text. Advances in natural language processing and machine learning have improved
+			the
+			accuracy, informativeness, conciseness, and readability of text summarization systems.
+		</p>
+	</div>
+	<div class="bg-gray-100 p-4 rounded-lg mb-4">
+		<h1 class="text-3xl font-bold mb-4">Rule-Based Summarization</h1>
+		<p class="text-lg leading-7">
+			Rule-based summarization is a method that involves using pre-defined rules to extract sentences or phrases
+			from
+			a text that best represent its content. The rules can be based on various linguistic features such as
+			keywords,
+			sentence length, or part of speech. The extracted sentences are then combined to create a summary that
+			captures
+			the essence of the original text. Rule-based summarization is a straightforward and effective method, but it
+			can
+			be limited by the complexity of the rules and the ability to identify the most important information.
+		</p>
+	</div>
+	<div class="bg-gray-100 p-4 rounded-lg mb-4">
+		<h1 class="text-3xl font-bold mb-4">Abstractive Summarization</h1>
+		<p class="text-lg leading-7">
+			Abstractive summarization is a more advanced method that involves creating a summary by generating new
+			sentences
+			that capture the essential information from a text. This technique involves using natural language
+			processing
+			and deep learning algorithms to understand the meaning of the text and generate new, concise sentences that
+			convey the same meaning. Abstractive summarization can produce more fluent and natural summaries, but it can
+			be
+			challenging to develop accurate algorithms that can generate high-quality summaries.
+		</p>
+	</div>
+	<div class="bg-gray-100 p-4 rounded-lg mb-4">
+		<h1 class="text-3xl font-bold mb-4">Graph-Based Summarization</h1>
+		<p class="text-lg leading-7">
+			Graph-based summarization is a method that involves representing the text as a graph, with sentences as
+			nodes
+			and relationships between sentences as edges. The graph is then analyzed to identify the most important
+			sentences based on various criteria such as centrality, connectivity, and position. The selected sentences
+			are
+			then combined to create a summary that captures the essential information from the original text.
+			Graph-based
+			summarization can produce high-quality summaries, but it can be computationally intensive and requires
+			advanced
+			graph analysis techniques.
+		</p>
+	</div>
+	<div class="bg-gray-100 p-4 rounded-lg mb-4">
+		<h1 class="text-3xl font-bold mb-4">Extractive Summarization</h1>
+		<p class="text-lg leading-7">
+			Extractive summarization is a method that involves selecting the most important sentences or phrases from a
+			text
+			and using them to create a summary. This technique involves using various algorithms such as sentence
+			scoring or
+			clustering to identify the most relevant information. Extractive summarization can produce summaries quickly
+			and
+			efficiently, but it can be limited by the ability to accurately identify the most critical sentences and
+			phrases.
+		</p>
+	</div>
+
+</body>
+
+</html>
